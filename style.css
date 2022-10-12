@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+html,
+body {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  background-image: url("https://cdn.wallpapersafari.com/58/24/vjRc1C.jpg");
+  background-color: #000000;
+  background-size: 100%;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.page-title {
+  font-size: 60px;
+  background: #121fcf;
+  background: -webkit-linear-gradient(to right, #121fcf 0%, #cf1512 100%);
+  background: -moz-linear-gradient(to right, #121fcf 0%, #cf1512 100%);
+  background: linear-gradient(to right, #121fcf 0%, #cf1512 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #b8860b;
+  margin: 0 0 5px;
+}
+
+.page-subtitle {
+  color: #b8860b;
+  margin-top: 5px;
+}
+
+body > img {
+  margin: 0 10px;
+  display: inline;
+  padding-right: 3px;
+  padding-bottom: 3px;
+}
+
+img {
+  max-height: 300px;
+}
+
+.grow img {
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+.divImg:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.divImg {
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.divImg:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  font-family: "Raleway", sans-serif, bold;
+  color: #b8860b;
+  font-size: 13px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: justify;
+}
